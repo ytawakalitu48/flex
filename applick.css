@@ -1,0 +1,98 @@
+.parent-container {
+    display: grid;
+    grid-template-columns: 410px 1fr;
+    height: 100vh;
+}
+.img {
+    background-image: url("https://appclick.ng/portal/uploads/school_content/login_image/1690229717-162752723964bedbd546018!Stay-Ahead-in-the-Coding-World-with-These-Programming-Laptop-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}  
+.login-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    
+}
+.logo{
+    width: 150px;
+    height: 80px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;}
+
+#username {
+    
+    padding: 10px;
+    outline: none;
+    text-indent: 10px;
+    font-size: 15px;
+    width: 250px;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid lightgrey;
+}
+
+#password {
+   padding: 10px;
+    outline: none;
+    text-indent: 10px;
+    font-size: 15px;
+    width: 250px;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid lightgrey;
+}
+#username:focus {
+    border: 2px solid lightgreen;
+}
+.fa-solid.fa-envelope{
+    position: absolute;
+    right: 6rem;
+    margin-top: 10px;
+}
+.user-cont {
+    position: relative;
+}
+.pass-cont{
+    position: relative;
+}
+.fa-solid.fa-lock{
+   position: absolute;
+    right: 6rem;
+    margin-top: 10px; 
+}
+#password:focus {
+    border: 2px solid lightgreen;
+}
+button {
+  width: 272px;  
+  padding: 15px;
+  background: rgba(0, 128, 0, 0.726);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 15px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.f {
+    display: flex;
+    gap: 3px;
+}
+.fa-solid.fa-key {
+    font-size: smaller;
+    
+}
+
+@media  (max-width:480px) {
+    .parent-container {
+    grid-template-columns: 1fr;
+    }
+}
